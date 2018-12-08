@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item_review"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textColor="#413978"
+        android:id="@+id/tv_name"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:maxEms="14"
+        android:text="hahahahahahahahahahahahahahahahhahahahaha"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="13dp"
+        android:textColor="#202020"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_task"
+        android:textSize="18sp"/>
+
+    <!--<com.ms.square.android.expandabletextview.ExpandableTextView-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/expand_text_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--expandableTextView:maxCollapsedLines="2"-->
+        <!--expandableTextView:animDuration="200">-->
+        <!--<TextView-->
+            <!--android:id="@id/expandable_text"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#666666" />-->
+        <!--<ImageButton-->
+            <!--android:id="@id/expand_collapse"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="16dp"-->
+            <!--android:layout_gravity="right|bottom"-->
+            <!--android:background="@android:color/transparent"/>-->
+    <!--</com.ms.square.android.expandabletextview.ExpandableTextView>-->
+    <!--<view.ExpandableTextView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/more"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--expandableTextView:maxCollapsedLines="4"-->
+    <!--expandableTextView:animDuration="200">-->
+    <!--<TextView-->
+        <!--android:id="@id/expandable_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="#666666" />-->
+    <!--<ImageButton-->
+        <!--android:id="@id/expand_collapse"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:layout_gravity="right|bottom"-->
+        <!--android:background="@android:color/transparent"/>-->
+    <!--</view.ExpandableTextView>-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--<view.MoreTextView-->
+        <!--android:id="@+id/more"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp"-->
+        <!--app:moreSwitchDrawable="@drawable/more"-->
+        <!--app:moreTextSize="22sp"-->
+        <!--app:moreSwitchTextColor="@color/colorAccent"-->
+        <!--app:moreTextColor="#3c3c40"-->
+        <!--/>-->
+    <!--</ScrollView>-->
+
+
+</LinearLayout>

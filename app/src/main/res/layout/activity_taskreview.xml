@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:background="#efefef"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#7ec6fb"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/update_detail_down"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:textColor="#383838"
+            android:typeface="monospace"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="@string/check_progress"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp" />
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7ab3df"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#81b8e2"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#98c3e4"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_margin="8dp"
+            android:id="@+id/edt_objId"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="4dp"
+            android:background="@drawable/button_style"
+            android:id="@+id/btn_update"
+            android:text="@string/to_check"
+            android:textSize="17sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_margin="3dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/purpleimg"/>
+
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:textColor="#383838"
+        android:text="@string/ass_at"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:scaleX="1.01"
+        android:layout_marginStart="8dp" />
+        </LinearLayout>
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tv_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandableTextView:maxCollapsedLines="3"
+        expandableTextView:animDuration="200">
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:textColor="#666666"/>
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="right|bottom"
+            android:background="@android:color/transparent"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+    </LinearLayout>
+
+   <!--<ListView-->
+       <!--android:divider="#00fcfcfc"-->
+       <!--android:dividerHeight="3dp"-->
+       <!--android:layout_margin="3dp"-->
+       <!--android:background="@drawable/circleback"-->
+       <!--android:id="@+id/lv_progress"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent"/>-->
+
+    <ExpandableListView
+        android:listSelector="@android:color/transparent"
+        android:divider="#00000000"
+        android:childDivider="#00000000"
+        android:groupIndicator="@null"
+        android:id="@+id/expandablelistview"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

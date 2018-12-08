@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7ec6fb"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:id="@+id/lltops"
+        android:layout_alignParentTop="true"
+        android:background="#7ec6fb"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#7ec6fb"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/update_detail_down"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:textColor="#383838"
+            android:typeface="monospace"
+            android:text="@string/code_to_share"/>
+       <View
+           android:layout_width="45dp"
+           android:layout_height="45dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#71aedc"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_below="@id/lltops"-->
+        <!--android:id="@+id/ll_top"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:background="@drawable/circleback"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+    <!--<TextView-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:textColor="#3e3e3e"-->
+        <!--android:text="分享码"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp" />-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:background="@drawable/whiteback"
+        android:layout_below="@+id/lltops"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <activities.MyListView
+        android:layout_margin="30dp"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/lv_keys"
+        android:divider="#ffffff"
+        android:dividerHeight="3dp"/>
+    </LinearLayout>
+</RelativeLayout>

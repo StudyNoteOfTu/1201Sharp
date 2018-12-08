@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:id="@+id/ll_tops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#7ec6fb">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/update_detail_down"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#383838"
+            android:typeface="monospace"
+            android:text="@string/finished_list"/>
+
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#71aedc"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:id="@+id/ll_btns"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_left"
+            android:text="@string/looking_at"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/test11111"
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_style"
+            android:id="@+id/btn_checkall"
+            android:text="@string/check_this_month"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/ll_tops"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <activities.MyListView
+        android:layout_margin="5dp"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/listview"
+        android:divider="#00000000"
+        android:dividerHeight="3dp"/>
+
+    <ImageView
+
+        android:id="@+id/img_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bmob_background"
+        tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

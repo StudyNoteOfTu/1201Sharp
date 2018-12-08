@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="expand_textview_right">11dip</dimen>
+
+    <dimen name="expand_textview_bottom">13dip</dimen>
+</resources>

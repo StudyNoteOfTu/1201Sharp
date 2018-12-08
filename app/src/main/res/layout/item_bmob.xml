@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:id="@+id/bmob_clip"
+        android:background="@drawable/home_item_child"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+    <TextView
+        android:text="hahaha"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        android:id="@+id/tv_date"
+        android:textColor="#5b5959"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_marginStart="30dp" />
+    <TextView
+        android:layout_marginBottom="3dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="30dp"
+        android:lines="3"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp" />
+    </LinearLayout>
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:layout_weight="1"
+        android:id="@+id/bmb2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        app:bmb_buttonEnum="ham"
+        app:bmb_piecePlaceEnum="piecePlace_ham_3"
+        app:bmb_buttonPlaceEnum="buttonPlace_ham_3"
+        app:bmb_inList="true"
+        />
+
+</LinearLayout>

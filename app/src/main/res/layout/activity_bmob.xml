@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bmobRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/top_text"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#7ec6fb"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <!--<Button-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:background="@drawable/list"-->
+            <!--android:id="@+id/btn_list"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="33dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginStart="30dp" />-->
+        <TextView
+            android:background="#7ec6fb"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:text="@string/share_ass"
+            android:textColor="#383838"
+            android:typeface="monospace"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp" />
+        <!--<Button-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:background="@drawable/downloadass"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:id="@+id/btn_query"-->
+            <!--android:layout_marginEnd="20dp" />-->
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#77b2df"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#78b6e6"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_above="@+id/downsidebar"
+        android:layout_below="@+id/top_text"
+        android:id="@+id/ll_tops"
+        android:background="#efefef"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="#efefef"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_list"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/asslist"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="分享码单"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"/>
+
+            <LinearLayout
+                android:id="@+id/btn_query"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/downass"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="获取任务"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:listSelector="@android:color/transparent"
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:overScrollMode="ifContentScrolls"
+                android:scrollbars="none" />
+            <ImageView
+                android:id="@+id/img_isEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bmob_background"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/downsidebar"
+        android:background="#f9f9f9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#d7d7d7"/>
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:background="#f9f9f9"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/img_first"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/housefore"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/first"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            tools:ignore="ContentDescription" />
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:gravity="center_horizontal"
+                android:text="@string/home"/>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/img_second"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:srcCompat="@drawable/calendarfore"
+            android:id="@+id/second"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:gravity="center_horizontal"
+            android:text="@string/main"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            app:srcCompat="@drawable/humanback"
+            android:id="@+id/third"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:textColor="#434343"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:gravity="center_horizontal"
+            android:text="@string/bmob"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab_bmob"
+    app:fabSize="normal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:clickable="true"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="71dp"
+    android:elevation="10dp"
+    android:src="@drawable/addimg"
+    tools:targetApi="lollipop"
+    android:focusable="true"
+    android:layout_marginEnd="7dp" />
+
+    </FrameLayout>

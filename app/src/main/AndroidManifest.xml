@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tufengyi.sharp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/sharp_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/sharp_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="Bmob_APP_KEY"
+            android:value="f4939b1bc990101036756a6398c7a159"/>
+
+        <activity android:name="activities.ProgressActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="activities.CorrectingActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="activities.AddingActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="activities.BmobActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="activities.KeysListActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="activities.CatchAssignmentActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="activities.AddAssignmentActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="activities.TaskUpdateProgressActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="activities.TaskReviewActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="activities.MainActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="activities.FinishedListActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="activities.AddingNoteActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="activities.CorrectNoteActivity"
+            android:launchMode="singleTask"/>
+        <receiver android:name="cn.bmob.newim.core.ConnectChangeReceiver">
+            <intent-filter>
+                <action android:name="cn.bmob.action.RECONNECT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="activities.AppWidgetProvider"
+            android:label="sharp">
+            <intent-filter>
+                <action android:name="action_button"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_sharp_info"/>
+        </receiver>
+
+        <service
+            android:name="cn.bmob.newim.core.service.BmobIMService"
+            android:process=":bmobcore"/>
+        <service android:name="cn.bmob.newim.core.service.NotifyService"
+            android:process=":bmobcore"/>
+        <service android:name="cn.bmob.newim.core.service.ReConnectService"/>
+        <service android:name="cn.bmob.newim.core.service.HeartBeatService"/>
+
+
+    </application>
+
+</manifest>

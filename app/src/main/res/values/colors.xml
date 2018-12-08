@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7ec6fb</color>
+    <color name="colorPrimaryDark">#7ec6fb</color>
+    <color name="colorAccent">#8c5eff</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_c61a04">#c61a04</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_d81e06">#d81e06</color>
+    <color name="color_b0b8b2">#b0b8b2</color>
+    <color name="color_28d19d">#28d19d</color>
+    <color name="color_000000">#000000</color>
+
+    <color name="r1">#cfcfcf</color>
+    <color name="r2">#faffaa</color>
+    <color name="r3">#e2adea</color>
+    <color name="r4">#abedec</color>
+    <color name="r5">#aef7b5</color>
+    <color name="r6">#e9dbdb</color>
+    <color name="r7">#eca6c9</color>
+    <color name="r8">#a6d8ec</color>
+    <color name="r9">#bab8ea</color>
+    <color name="ra">#eddcb7</color>
+    <color name="rb">#f2e2c0</color>
+    <color name="rc">#d6e9b7</color>
+    <color name="rd">#beedc3</color>
+    <color name="re">#bee7ed</color>
+    <color name="rf">#becced</color>
+    <color name="rg">#dabeed</color>
+    <color name="rh">#edbed8</color>
+    <color name="ri">#ffbfc0</color>
+    <color name="rj">#d4bfff</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

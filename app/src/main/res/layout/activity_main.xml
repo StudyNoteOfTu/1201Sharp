@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#efefef"
+    android:id="@+id/mainRelative"
+    android:weightSum="1"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/top_text"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:background="#7ec6fb"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="23sp"
+        android:text="@string/richengqingdan"
+        android:textColor="#383838"
+        android:typeface="monospace"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7ab3df"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#81b8e2"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#98c3e4"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/lv_title"
+        android:background="#efefef"
+        android:id="@+id/lv_edt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="#3e3e3e"
+            android:id="@+id/tv_left"
+            android:text="@string/zhengzaichakan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#3e3e3e"
+            android:id="@+id/tv_day"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#3e3e3e"
+            android:id="@+id/tv_jtonow"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/top_text"
+        android:id="@+id/lv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <view.DataView
+            android:id="@+id/week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"/>
+
+        <View
+            android:background="#d2d2d2"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"/>
+        <View
+            android:background="#e7e7e7"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/lv_title"
+        android:layout_above="@+id/ll_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:listSelector="@android:color/transparent"
+            android:paddingTop="10dp"
+            android:alpha="255"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbars="none"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/listview"
+            android:divider="#00000000"
+            android:dividerHeight="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/main_background"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_add"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/downsidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/downsidebar"
+        android:background="#f9f9f9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#d7d7d7"/>
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:background="#f9f9f9"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/img_first"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/housefore"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/first"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:gravity="center_horizontal"
+                android:text="@string/home"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                app:srcCompat="@drawable/calendarback"
+                android:id="@+id/second"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:textColor="#434343"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:gravity="center_horizontal"
+                android:text="@string/main"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/img_third"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                app:srcCompat="@drawable/hunmanfore"
+                android:id="@+id/third"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:gravity="center_horizontal"
+                android:text="@string/bmob"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/downsidebar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

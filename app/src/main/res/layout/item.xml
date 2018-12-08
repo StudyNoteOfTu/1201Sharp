@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/lin_root">
+
+    <LinearLayout
+        android:background="@drawable/main_back1"
+        android:id="@+id/ll_clip"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_tab"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/test12"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ll_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="40dp">
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textColor="#5b5959"
+            android:text="@string/test_time"
+            android:id="@+id/show_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:textColor="#000000"
+            android:text="@string/testhahahaha"
+            android:id="@+id/show_schedule"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:maxEms="14"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb2"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal"
+        app:bmb_buttonEnum="ham"
+        app:bmb_piecePlaceEnum="piecePlace_ham_3"
+        app:bmb_buttonPlaceEnum="buttonPlace_ham_3"
+        app:bmb_inList="true"
+        />
+
+
+
+</LinearLayout>
